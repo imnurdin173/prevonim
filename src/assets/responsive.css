@@ -1,0 +1,41 @@
+/* Color-scheme Setting For Mata kalong ----------------------------------------*/
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        --bg-color:#282c34;
+        --prim-text-color:white;
+    }
+
+    ul {
+        --prim-text-color:white;
+    }
+} /* >>>>> End of media screen and (prefers-color-scheme: dark) */
+
+/* Resolution setting for Mobile Devices ----------------------------------------*/
+@media screen and (min-width:320px) and (max-width:480px) {
+    header {
+        margin:0;
+        padding:0;
+    }
+    ul {
+        margin:0;
+    }
+    li {
+        margin:0 2px !important;
+    }
+} /* >>>>> End of media screen and (min-width:320px) and (max-width:480px) */
+
+/* Resolution setting for Tablets iPads ----------------------------------------*/
+@media (min-width:481px) and (max-width:768px) {
+} /* >>>>> End of media (min-width:481px) and (max-width:768px) */
+
+/* Resolution setting for SM Screens & Laptops ----------------------------------------*/
+@media (min-width:769px) and (max-width:1024px) {
+} /* >>>>> End of media (min-width:769px) and (max-width:1024px) */
+
+/* Resolution setting for UHD Screens ----------------------------------------*/
+@media (min-width:1025px) and (max-width:1200px) {
+} /* >>>>> End of media (min-width:1025px) and (max-width:1200px) */
+
+/* Resolution setting for Extra Large Screens ----------------------------------------*/
+@media (min-width:1201px) {
+} /* >>>>> End of media (min-width:1201px) */

@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('../assets/responsive.css');
+
+:root {
+    --bg-color:#282c34;
+    --prim-color:#000;
+    --Sec-color:#000;
+    --prim-text-color:#fff;
+    --sec-text-color:#fff;
+}
 
 * {
     margin:0;
@@ -11,5 +20,22 @@ html {
 
 body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: #282c34;
+    background-color: var(--bg-color);
+    color:var(--prim-text-color);
+}
+
+ul {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0;
+    padding:0;
+    color:var(--prim-text-color);
+    font-size: calc(8px + 2vmin);
+    padding-top:20px;
+}
+
+li {
+    list-style:none;
+    margin:0 15px;
 }
