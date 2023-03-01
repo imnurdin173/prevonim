@@ -22,6 +22,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     background-color: var(--bg-color);
     color:var(--prim-text-color);
+
 }
 
 ul {
@@ -39,3 +40,104 @@ li {
     list-style:none;
     margin:0 15px;
 }
+
+#bg-mon {
+    /* display: fixed; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(img/daniel-leone-g30P1zcOzXo-unsplash.png) no-repeat; /* Photo by Daniel Leone https://unsplash.com/photos/g30P1zcOzXo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink  */
+    background-size: cover;
+    z-index: -3;
+  }
+
+  canvas {
+    position: fixed;
+    z-index: -5;
+    margin: 0;
+    padding: 0;
+    /* height: 600px; */
+    width: 100%;
+  }
+  .dr {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      0deg,
+      rgba(2, 0, 36, 0.4) 0%,
+      rgba(2, 2, 88, 0.4) 85%
+    );
+    z-index: -2;
+  }
+
+  #pl {
+    position: absolute;
+    display: flex;
+    background-color: #282c34;
+
+    align-items: center;
+    justify-content: center;
+
+    /* max-width: 4rem; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+  }
+  #pl::before,
+  #pl::after {
+    width: 50px;
+    height: 50px;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    filter: drop-shadow(0 0 1.7rem/2.25 rgba(#fff, 0.5));
+    animation-name: circlePlaAnim;
+  }
+
+  #pl p {
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    color: #fff;
+    opacity: 0;
+    padding-top: 100px;
+    animation-name: PlaAnim;
+  }
+
+  @keyframes circlePlaAnim {
+    0% {
+      box-shadow: 0 0 0 0 #fff;
+      opacity: 0;
+    }
+    50% {
+      box-shadow: 0 0 0 0 #fff;
+      opacity: 0.7;
+    }
+    100% {
+      box-shadow: 0 0 0 10px #fff;
+      opacity: 0;
+    }
+  }
+
+  @keyframes PlaAnim {
+    0% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 0.3;
+    }
+  }

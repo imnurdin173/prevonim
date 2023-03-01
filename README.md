@@ -1,6 +1,6 @@
 # My Web Portfolio (Ver2) - PREVONIM
 
-This project will using Reactjs, Bootstrap, etc.
+This project will be using Reactjs, Bootstrap, etc.
 
 ## Expected Main Features
 
@@ -18,7 +18,7 @@ This project will using Reactjs, Bootstrap, etc.
 
 > > Blog
 
-    I will do integrating some of my article on my blog from external sites and place it. This features still opsional btw.
+    I will do integrate some of my article on my blog from external sites and place it. This features still opsional btw.
 
 > > Connect
 
